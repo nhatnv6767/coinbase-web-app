@@ -37,6 +37,11 @@ export default createSchema({
           name: 'usdPrice',
           type: 'string',
         },
+        {
+          title: 'Logo',
+          name: 'logo',
+          type: 'image',
+        },
       ]
     }
   ]),

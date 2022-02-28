@@ -3,7 +3,13 @@ import styled from 'styled-components'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <PortfolioTable>
+        <TableItem>
+            <Title>
+                Your Assets
+            </Title>
+        </TableItem>
+    </PortfolioTable>
   )
 }
 

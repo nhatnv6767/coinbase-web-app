@@ -2,15 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Portfolio = () => {
-  return (
-    <PortfolioTable>
-        <TableItem>
-            <Title>
-                Your Assets
-            </Title>
-        </TableItem>
-    </PortfolioTable>
-  )
+    return (
+        <Wrapper>
+            <PortfolioTable>
+                <TableItem>
+                    <Title>
+                        Your Assets
+                    </Title>
+                </TableItem>
+            </PortfolioTable>
+        </Wrapper>
+    )
 }
 
 export default Portfolio

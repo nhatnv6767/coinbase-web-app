@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Wrapper>
       {address ? (
-        <Dashboard address={address}/>
+        <Dashboard address={address} />
       ) : (
         <WalletConnect>
           <Button onClick={() => connectWallet('injected')}>

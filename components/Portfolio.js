@@ -10,6 +10,14 @@ const Portfolio = () => {
                         Your Assets
                     </Title>
                 </TableItem>
+                <Divider />
+                <Table>
+                    <TableItem>
+                        <TableRow>
+                            <div></div>
+                        </TableRow>
+                    </TableItem>
+                </Table>
             </PortfolioTable>
         </Wrapper>
     )

@@ -4,9 +4,13 @@ import { useWeb3 } from '@3rdweb/hooks'
 export default function Home() {
   const { address, connectWallet } = useWeb3()
   return (
-    <div>
-      <button onClick={() => connectWallet('injected')}>Connect Wallet</button>
-    </div>
+    <Wrapper>
+      <WalletConnect>
+        <button onClick={() => connectWallet('injected')}>
+          Connect Wallet
+        </button>
+      </WalletConnect>
+    </Wrapper>
   )
 }
 
@@ -18,4 +22,10 @@ const Wrapper = styled.div`
   color: white;
   display: grid;
   place-items: center;
+`
+const WalletConnect = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `

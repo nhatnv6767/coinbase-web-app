@@ -8,7 +8,11 @@ const Coin = () => {
     <Wrapper>
         <div>
             <div style={{flex: 3}}>
-                
+                <NameCol>
+                    <CoinIcon>
+                        <Image src={coin.logo} alt={coin.name} />
+                    </CoinIcon>
+                </NameCol>
             </div>
         </div>
     </Wrapper>

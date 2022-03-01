@@ -5,7 +5,13 @@ import Image from 'next/image'
 
 const Coin = () => {
   return (
-    <div>Coin</div>
+    <Wrapper>
+        <div>
+            <div style={{flex: 3}}>
+                
+            </div>
+        </div>
+    </Wrapper>
   )
 }
 

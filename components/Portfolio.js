@@ -28,7 +28,8 @@ const Portfolio = () => {
                     <Divider />
                     <div>{coins.map(coin => (
                         <div>
-                            
+                            {/* <Coin coin={coin} /> */}
+                            <Divider />
                         </div>
                     ))}</div>
                 </Table>

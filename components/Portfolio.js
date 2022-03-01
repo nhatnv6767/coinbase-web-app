@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { BsThreeDotsVertical } from 'react-icons/bs'
+import { coins } from '../static/coins'
 
 const Portfolio = () => {
     return (
@@ -24,6 +25,8 @@ const Portfolio = () => {
                             </div>
                         </TableRow>
                     </TableItem>
+                    <Divider />
+                    <div>{coins.map}</div>
                 </Table>
             </PortfolioTable>
         </Wrapper>

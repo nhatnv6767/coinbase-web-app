@@ -3,7 +3,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import Image from 'next/image'
 
 
-const Coin = () => {
+const Coin = ({coin}) => {
   return (
     <Wrapper>
         <div>

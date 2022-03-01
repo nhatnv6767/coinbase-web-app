@@ -13,8 +13,8 @@ const Coin = ({ coin }) => {
                             <Image src={coin.logo} alt={coin.name} />
                         </CoinIcon>
                         <div>
-                            <Primary></Primary>
-                            <Secondary></Secondary>
+                            <Primary>{coin.name}</Primary>
+                            <Secondary>{coin.sign}</Secondary>
                         </div>
                     </NameCol>
                 </div>

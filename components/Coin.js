@@ -3,20 +3,24 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import Image from 'next/image'
 
 
-const Coin = ({coin}) => {
-  return (
-    <Wrapper>
-        <div>
-            <div style={{flex: 3}}>
-                <NameCol>
-                    <CoinIcon>
-                        <Image src={coin.logo} alt={coin.name} />
-                    </CoinIcon>
-                </NameCol>
+const Coin = ({ coin }) => {
+    return (
+        <Wrapper>
+            <div>
+                <div style={{ flex: 3 }}>
+                    <NameCol>
+                        <CoinIcon>
+                            <Image src={coin.logo} alt={coin.name} />
+                        </CoinIcon>
+                        <div>
+                            <Primary></Primary>
+                            <Secondary></Secondary>
+                        </div>
+                    </NameCol>
+                </div>
             </div>
-        </div>
-    </Wrapper>
-  )
+        </Wrapper>
+    )
 }
 
 export default Coin

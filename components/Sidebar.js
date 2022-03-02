@@ -13,7 +13,13 @@ const Sidebar = () => {
                 </Logo>
             </LogoContainer>
             <NavItemsContainer>
-                {navItems}
+                {navItems.map((item, index) => (
+                    <NavItem key={index} >
+                        <NavIcon>
+                            {item.icon}
+                        </NavIcon>
+                    </NavItem>
+                ))}
             </NavItemsContainer>
         </Wrapper>
     )

@@ -27,6 +27,12 @@ const Coin = ({ coin }) => {
                         {coin.balanceCoin} {coin.sign}
                     </Secondary>
                 </div>
+                <div style={{ flex: 1 }}>
+                    <Primary>
+                        {'$'}
+                        {coin.priceUsd}
+                    </Primary>
+                </div>
             </div>
         </Wrapper>
     )

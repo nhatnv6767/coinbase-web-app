@@ -23,6 +23,9 @@ const Coin = ({ coin }) => {
                         {'$'}
                         {coin.balanceUsd}
                     </Primary>
+                    <Secondary>
+                        {coin.balanceCoin} {coin.sign}
+                    </Secondary>
                 </div>
             </div>
         </Wrapper>

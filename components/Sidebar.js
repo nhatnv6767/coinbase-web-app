@@ -33,3 +33,27 @@ const NavItemsContainer = styled.div`
         cursor: pointer;
     }
 `
+
+const NavItem = styled.div`
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    height: 4rem;
+
+    &:hover {
+        background-color: #141519;
+    }
+`
+
+const NavIcon = styled.div`
+    background-color: #141519;
+    padding: 0.7rem;
+    /** Hinh tron cua icon ben trai */
+    border-radius: 50%; 
+    margin: 0 1rem;
+    display: grid;
+    place-items: center;
+`

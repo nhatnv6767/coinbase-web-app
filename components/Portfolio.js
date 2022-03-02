@@ -20,8 +20,8 @@ const Portfolio = () => {
                             </BalanceValue>
                         </Balance>
                     </div>
+                    <BalanceChart />
                 </Chart>
-                <BalanceChart />
                 <PortfolioTable>
                     <TableItem>
                         <Title>

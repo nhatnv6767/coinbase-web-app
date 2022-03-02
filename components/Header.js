@@ -6,6 +6,10 @@ const Header = () => {
         <Wrapper>
             <Title>Assets</Title>
             <ButtonsContainer>
+                <WalletLink>
+                    <WalletLinkTitle>Wallet Connected</WalletLinkTitle>
+                    <WalletAddress></WalletAddress>
+                </WalletLink>
                 <Button style={{ backgroundColor: '#3773f5', color: '#000' }}>
                     Buy / Sell
                 </Button>

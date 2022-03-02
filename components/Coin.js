@@ -18,6 +18,12 @@ const Coin = ({ coin }) => {
                         </div>
                     </NameCol>
                 </div>
+                <div style={{ flex: 2 }}>
+                    <Primary>
+                        {'$'}
+                        {coin.balanceUsd}
+                    </Primary>
+                </div>
             </div>
         </Wrapper>
     )

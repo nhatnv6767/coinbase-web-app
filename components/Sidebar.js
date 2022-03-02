@@ -25,3 +25,11 @@ const Logo = styled.div`
     object-fit: contain;
     margin-left: 1.5rem;
 `
+
+const NavItemsContainer = styled.div`
+    margin-top: 3rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+`

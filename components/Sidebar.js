@@ -18,6 +18,7 @@ const Sidebar = () => {
                         <NavIcon>
                             {item.icon}
                         </NavIcon>
+                        <NavTitle>{item.title}</NavTitle>
                     </NavItem>
                 ))}
             </NavItemsContainer>
@@ -75,3 +76,5 @@ const NavIcon = styled.div`
     display: grid;
     place-items: center;
 `
+
+const NavTitle = styled.div``

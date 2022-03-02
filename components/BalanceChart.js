@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { Line } from 'react-chartjs-2'
 
+const data = {
+    labels: [],
+    datasets: [,]
+}
 
 const BalanceChart = () => {
   return (

@@ -2,7 +2,18 @@ import styled from "styled-components";
 import { Line } from 'react-chartjs-2'
 
 const data = {
-    labels: [],
+    labels: [
+        'Apr',
+        'May',
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sept',
+        'Oct',
+        'Nov',
+        'Dec',
+        'Jan',
+    ],
     datasets: [,]
 }
 

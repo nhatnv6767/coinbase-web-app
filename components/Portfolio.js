@@ -9,6 +9,18 @@ const Portfolio = () => {
     return (
         <Wrapper>
             <Content>
+                <Chart>
+                    <div>
+                        <Balance>
+                            <BalanceTitle>Portfolio balance</BalanceTitle>
+                            <BalanceValue>
+                                {'$'}
+                                {/* {walletBalance.toLocaleString()} */}
+                                46,000
+                            </BalanceValue>
+                        </Balance>
+                    </div>
+                </Chart>
                 <BalanceChart />
                 <PortfolioTable>
                     <TableItem>

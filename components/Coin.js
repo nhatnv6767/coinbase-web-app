@@ -32,6 +32,9 @@ const Coin = ({ coin }) => {
                         {'$'}
                         {coin.priceUsd}
                     </Primary>
+                    <div style={{ color: coin.change < 0 ? '#f0616d' : '#26ad75' }}>
+                        {coin.change > 0 && '+'}
+                    </div>
                 </div>
             </div>
         </Wrapper>

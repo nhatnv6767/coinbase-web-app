@@ -6,7 +6,11 @@ import Coin from './Coin'
 import BalanceChart from './BalanceChart'
 
 const Portfolio = () => {
-    useEffect(() => { }, [])
+    useEffect(() => {
+        const getCoins = async() => {
+            
+        }
+     }, [])
     return (
         <Wrapper>
             <Content>

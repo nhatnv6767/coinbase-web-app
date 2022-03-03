@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { BsThreeDotsVertical } from 'react-icons/bs'
 import { coins } from '../static/coins'
@@ -6,6 +6,7 @@ import Coin from './Coin'
 import BalanceChart from './BalanceChart'
 
 const Portfolio = () => {
+    useEffect(() => { }, [])
     return (
         <Wrapper>
             <Content>

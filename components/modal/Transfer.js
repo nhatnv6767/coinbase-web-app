@@ -17,3 +17,40 @@ const Wrapper = styled.div`
     height: 100%;
     flex: 1;
 `
+
+const Amount = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+`
+
+const FlexInputContainer = styled.div`
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+
+    & > span {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        color: #3773f5;
+    }
+`
+
+const FlexInput = styled.input`
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    text-wrap: wrap;
+    text-align: right;
+    max-width: 45%;
+    margin-right: 1rem;
+    font-size: 4.5rem;
+    color: #3773f5;
+
+    &::-webkit-outer-spin-button,
+    ::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+`

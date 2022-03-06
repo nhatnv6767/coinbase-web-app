@@ -24,9 +24,9 @@ const Header = ({walletAddress, connectWallet}) => {
                 </Button>
                 <Button>Send / Receive</Button>
             </ButtonsContainer>
-            <Modal >
-
-            </Modal>
+            <Modal 
+            isOpen={!!router.query.transfer}
+            ></Modal>
         </Wrapper>
     )
 }

@@ -16,7 +16,7 @@ const TransferModal = () => {
     const selectedModal = option => {
         switch (option) {
             case 'send':
-                return <Transfer></Transfer>
+                return <Transfer />
             case 'receive':
                 return <h2>receive</h2>
             default:

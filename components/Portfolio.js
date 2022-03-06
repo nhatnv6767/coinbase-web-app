@@ -9,7 +9,7 @@ import BalanceChart from './BalanceChart'
 const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
     thirdWebTokens[0]
         .balanceOf(walletAddress)
-        .then(balance => console.log(balance))
+        .then(balance => console.log(Number(balance.displayValue)))
     return (
         <Wrapper>
             <Content>

@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 Modal.setAppElement('#__next')
 
-const Header = ({walletAddress, connectWallet}) => {
+const Header = ({ walletAddress, connectWallet }) => {
     const router = useRouter()
     return (
         <Wrapper>
@@ -24,8 +24,9 @@ const Header = ({walletAddress, connectWallet}) => {
                 </Button>
                 <Button>Send / Receive</Button>
             </ButtonsContainer>
-            <Modal 
-            isOpen={!!router.query.transfer}
+            <Modal
+                isOpen={!!router.query.transfer}
+                onRequestClose={() => router.push('/')}
             ></Modal>
         </Wrapper>
     )

@@ -54,3 +54,9 @@ const FlexInput = styled.input`
         -webkit-appearance: none;
     }
 `
+
+const Warning = styled.div`
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+    color: #8a919e;
+`

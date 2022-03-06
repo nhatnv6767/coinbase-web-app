@@ -18,7 +18,7 @@ const TransferModal = () => {
                     <p>send</p>
                 </Option>
 
-                <Option>
+                <Option style={unselectedStyle}>
                     <p>receive</p>
                 </Option>
             </Selector>

@@ -9,6 +9,9 @@ const Transfer = () => {
                     <FlexInput placeholder='0' type='number' />
                     <span>ETH</span>
                 </FlexInputContainer>
+                <Warning style={{color: '' && '#0a0b0d'}}>
+                    Amount is a required field
+                </Warning>
             </Amount>
         </Wrapper>
     )

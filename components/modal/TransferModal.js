@@ -14,7 +14,10 @@ const TransferModal = () => {
     return (
         <Wrapper>
             <Selector>
-                <Option style={selectedStyle} onClick={() => setAction('send')}>
+                <Option
+                    style={action === 'send' ? selectedStyle : unselectedStyle}
+                    onClick={() => setAction('send')}
+                >
                     <p>send</p>
                 </Option>
 

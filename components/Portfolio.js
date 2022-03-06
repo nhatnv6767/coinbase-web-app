@@ -21,11 +21,11 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
         const calculateTotalBalance = async () => {
             const totalBalance = await Promise.all(
                 thirdWebTokens.map(async token => {
-                    const balance = await token.getBalance(walletAddress)
+                    const balance = await token.balanceOf(walletAddress)
                     return Number(balance.displayValue) * tokenToUSD[token.address]
                 })
             )
-            console.log(totalBalance)
+            console.log(totalBalance, 'total balance')
         }
         return calculateTotalBalance()
     }, [])

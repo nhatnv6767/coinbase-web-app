@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { BsThreeDotsVertical } from 'react-icons/bs'
 import { coins } from '../static/coins'
@@ -10,6 +10,7 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
     // thirdWebTokens[0]
     //     .balanceOf(walletAddress)
     //     .then(balance => console.log(Number(balance.displayValue) * 31000))
+    const [walletBalance, setWalletBalance] = useState(0)
     const tokenToUSD = {}
 
     for (const token of sanityTokens) {
@@ -23,11 +24,8 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
             // string to number
             total += Number(balance.displayValue) * tokenToUSD[token.address]
         }
-        console.log(total)
-        return total
+        setWalletBalance(total)
     }
-
-    calculateTotalBalance()
     
 
     // convert all of my tokens into USD

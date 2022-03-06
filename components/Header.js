@@ -22,7 +22,9 @@ const Header = ({ walletAddress, connectWallet }) => {
                 <Button style={{ backgroundColor: '#3773f5', color: '#000' }}>
                     Buy / Sell
                 </Button>
-                <Button>Send / Receive</Button>
+                <Link href={'/?transfer=1'}>
+                    <Button>Send / Receive</Button>
+                </Link>
             </ButtonsContainer>
             <Modal
                 isOpen={!!router.query.transfer}

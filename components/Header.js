@@ -5,7 +5,10 @@ import { useRouter } from 'next/router'
 import TransferModal from './modal/TransferModal'
 import Link from 'next/link'
 
+Modal.setAppElement('#__next')
+
 const Header = ({walletAddress, connectWallet}) => {
+    const router = useRouter()
     return (
         <Wrapper>
             <Title>Assets</Title>
@@ -21,6 +24,9 @@ const Header = ({walletAddress, connectWallet}) => {
                 </Button>
                 <Button>Send / Receive</Button>
             </ButtonsContainer>
+            <Modal >
+
+            </Modal>
         </Wrapper>
     )
 }

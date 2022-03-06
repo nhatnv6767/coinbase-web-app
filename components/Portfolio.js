@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { BsThreeDotsVertical } from 'react-icons/bs'
 import { coins } from '../static/coins'
@@ -26,7 +26,8 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
         }
         setWalletBalance(total)
     }
-    
+
+    useEffect(() => { }, [])
 
     // convert all of my tokens into USD
     return (

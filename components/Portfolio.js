@@ -14,7 +14,7 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
     console.log(sanityTokens)
     const tokenToUSD = {}
 
-    for (token of sanityTokens) {
+    for (const token of sanityTokens) {
         tokenToUSD[token.contractAddress] = Number(token.usdPrice)
     }
 

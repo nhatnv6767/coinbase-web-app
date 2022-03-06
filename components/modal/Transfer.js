@@ -4,7 +4,12 @@ import styled from 'styled-components'
 const Transfer = () => {
     return (
         <Wrapper>
-            <h2>YOWZA</h2>
+            <Amount>
+                <FlexInputContainer>
+                    <FlexInput placeholder='0' type='number' />
+                    <span>ETH</span>
+                </FlexInputContainer>
+            </Amount>
         </Wrapper>
     )
 }

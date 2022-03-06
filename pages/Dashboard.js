@@ -34,8 +34,8 @@ const Dashboard = ({ address }) => {
         }
         return getSanityAndThirdWebTokens()
     }, [])
-    console.log('Sanity ->', sanityTokens)
-    console.log('Thirdweb ->', thirdWebTokens)
+    // console.log('Sanity ->', sanityTokens)
+    // console.log('Thirdweb ->', thirdWebTokens)
     return (
         <Wrapper>
             <Sidebar />

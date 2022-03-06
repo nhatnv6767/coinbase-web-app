@@ -7,9 +7,9 @@ import BalanceChart from './BalanceChart'
 
 
 const Portfolio = ({thirdWebTokens, sanityTokens, walletAddress}) => {
-    console.log(thirdWebTokens, ':g')
-    console.log(sanityTokens)
-    console.log(walletAddress)
+    // console.log(thirdWebTokens, ':g')
+    // console.log(sanityTokens)
+    // console.log(walletAddress)
     return (
         <Wrapper>
             <Content>

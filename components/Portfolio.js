@@ -28,7 +28,7 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
             setWalletBalance(totalBalance.reduce((acc, curr) => acc + curr, 0))
         }
         return calculateTotalBalance()
-    }, [thirdWebTokens])
+    }, [thirdWebTokens, sanityTokens])
 
     // calculateTotalBalance()
     // convert all of my tokens into USD

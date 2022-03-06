@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { BsThreeDotsVertical } from 'react-icons/bs'
 import { coins } from '../static/coins'
@@ -6,7 +6,10 @@ import Coin from './Coin'
 import BalanceChart from './BalanceChart'
 
 
-const Portfolio = () => {
+const Portfolio = ({thirdWebTokens, sanityTokens, walletAddress}) => {
+    console.log(thirdWebTokens, ':g')
+    console.log(sanityTokens)
+    console.log(walletAddress)
     return (
         <Wrapper>
             <Content>

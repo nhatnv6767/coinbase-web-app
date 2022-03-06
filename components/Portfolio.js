@@ -25,8 +25,7 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
                     return Number(balance.displayValue) * tokenToUSD[token.address]
                 })
             )
-            console.log(totalBalance, 'total balance')
-            console.log(totalBalance.reduce((acc, curr)=> acc + curr))
+            setWalletBalance(totalBalance.reduce((acc, curr) => acc + curr, 0))
         }
         return calculateTotalBalance()
     }, [])
@@ -42,8 +41,8 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
                             <BalanceTitle>Portfolio balance</BalanceTitle>
                             <BalanceValue>
                                 {'$'}
-                                {/* {walletBalance.toLocaleString()} */}
-                                46,000
+                                {walletBalance.toLocaleString()}
+                                {/* 46,000 */}
                             </BalanceValue>
                         </Balance>
                     </div>

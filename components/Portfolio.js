@@ -25,9 +25,10 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
                 // string to number
                 total += Number(balance.displayValue) * tokenToUSD[token.address]
             }
+            console.log('Total balance: ', total)
             setWalletBalance(total)
         }
-        calculateTotalBalance()
+        return calculateTotalBalance()
     }, [])
 
     // convert all of my tokens into USD

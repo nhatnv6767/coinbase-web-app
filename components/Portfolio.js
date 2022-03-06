@@ -26,6 +26,7 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
                 })
             )
             console.log(totalBalance, 'total balance')
+            console.log(totalBalance.reduce((acc, curr)=> acc + curr))
         }
         return calculateTotalBalance()
     }, [])

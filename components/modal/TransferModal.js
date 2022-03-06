@@ -11,6 +11,17 @@ const TransferModal = () => {
     const unselectedStyle = {
         border: '1px solid #282b2f',
     }
+
+    const selectedModal = option => {
+        switch (option) {
+            case 'send':
+                return <h2>send</h2>
+            case 'receive':
+                return <h2>receive</h2>
+            default:
+                return <h2>send</h2>
+        }
+    }
     return (
         <Wrapper>
             <Selector>

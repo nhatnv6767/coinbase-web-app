@@ -29,7 +29,9 @@ const Header = ({ walletAddress, connectWallet }) => {
             <Modal
                 isOpen={!!router.query.transfer}
                 onRequestClose={() => router.push('/')}
-            ></Modal>
+            >
+                <TransferModal />
+            </Modal>
         </Wrapper>
     )
 }

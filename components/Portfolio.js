@@ -19,18 +19,18 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
 
     useEffect(() => {
         const calculateTotalBalance = async () => {
-            let total = 0
-            for (const token of thirdWebTokens) {
-                const balance = await token.balanceOf(walletAddress)
-                // string to number
-                total += Number(balance.displayValue) * tokenToUSD[token.address]
-            }
-            console.log('Total balance: ', total)
-            setWalletBalance(total)
+            const totalBalance = await Promise.all(
+                thirdWebTokens.map(async token => {
+                    const balance = await token.getBalance(walletAddress)
+                    return Number(balance.displayValue) * tokenToUSD[token.address]
+                })
+            )
+            console.log(totalBalance)
         }
         return calculateTotalBalance()
     }, [])
 
+    console.log(calculateTotalBalance)
     // convert all of my tokens into USD
     return (
         <Wrapper>

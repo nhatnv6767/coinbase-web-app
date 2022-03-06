@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { BsThreeDotsVertical } from 'react-icons/bs'
 import { coins } from '../static/coins'
@@ -6,6 +6,7 @@ import Coin from './Coin'
 import BalanceChart from './BalanceChart'
 
 const Portfolio = () => {
+    const [sanityTokens, setSanityTokens] = useState([]);
     useEffect(() => {
         const getCoins = async () => {
             try {

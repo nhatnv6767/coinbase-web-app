@@ -16,8 +16,6 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
         tokenToUSD[token.contractAddress] = Number(token.usdPrice)
     }
 
-    console.table(tokenToUSD)
-
     const calculateTotalBalance = async () => {
         let total = 0
         for (const token of thirdWebTokens) {
@@ -25,7 +23,12 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
             // string to number
             total += Number(balance.displayValue) * tokenToUSD[token.address]
         }
+        console.log(total)
+        return total
     }
+
+    calculateTotalBalance()
+    
 
     // convert all of my tokens into USD
     return (

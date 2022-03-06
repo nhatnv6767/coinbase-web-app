@@ -14,7 +14,7 @@ const TransferModal = () => {
     return (
         <Wrapper>
             <Selector>
-                <Option style={{ selectedStyle}}>
+                <Option style={selectedStyle}>
                     <p>send</p>
                 </Option>
 

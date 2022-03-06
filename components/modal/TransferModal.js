@@ -20,3 +20,10 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
 `
+
+const Selector = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+`

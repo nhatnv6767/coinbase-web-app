@@ -21,7 +21,10 @@ const TransferModal = () => {
                     <p>send</p>
                 </Option>
 
-                <Option style={unselectedStyle} onClick={() => setAction('receive')}>
+                <Option
+                    style={action === 'receive' ? selectedStyle : unselectedStyle}
+                    onClick={() => setAction('receive')}
+                >
                     <p>receive</p>
                 </Option>
             </Selector>

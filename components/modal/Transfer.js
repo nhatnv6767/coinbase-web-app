@@ -34,6 +34,14 @@ const Transfer = () => {
                     />
                 </Row>
                 <Divider />
+                <Row>
+                    <FieldName>Pay with</FieldName>
+                    <CoinSelectList>
+                        <Icon>
+                            {/* <img src={imageUrl} alt='' /> */}
+                        </Icon>
+                    </CoinSelectList>
+                </Row>
             </TransferForm>
         </Wrapper>
     )

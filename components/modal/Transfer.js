@@ -35,7 +35,7 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
         }
     }, [activeThirdWebToken])
 
-    const sendCrypto = async () => {
+    const sendCrypto = async (amount) => {
         console.log('sending crypto ...')
 
         if (activeThirdWebToken && amount && recipient) {
@@ -92,7 +92,7 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
                 </Row>
             </TransferForm>
             <Row>
-                <Continue onclick={() => sendCrypto()}>Continue</Continue>
+                <Continue onclick={() => sendCrypto(amount)}>Continue</Continue>
             </Row>
             <Row>
                 <BalanceTitle>{selectedToken.symbol} Balance</BalanceTitle>

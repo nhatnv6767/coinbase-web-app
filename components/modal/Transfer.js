@@ -43,6 +43,10 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
                 recipient,
                 amount.toString().concat('000000000000000000')
             )
+            console.log(tx)
+            setAction('transferred')
+        } else {
+            console.error('missing data')
         }
     }
 

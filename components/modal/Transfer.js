@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { FaWallet } from 'react-icons/fa'
 
-const Transfer = ({selectedToken}) => {
+const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) => {
     const [amount, setAmount] = useState()
     const [recipient, setRecipient] = useState('')
 

@@ -10,7 +10,7 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
 
     useEffect(() => {
         console.log(selectedToken, '::fire')
-        const url = imageUrlBuilder(client).image(selectedToken.logo).width(100).url()
+        const url = imageUrlBuilder(client).image(selectedToken.logo).url()
         console.log(url)
     }, [])
     return (

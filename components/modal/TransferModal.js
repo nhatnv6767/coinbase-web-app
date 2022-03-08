@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Transfer from './Transfer'
 
-const TransferModal = () => {
+const TransferModal = ({sanityTokens}) => {
     const [action, setAction] = useState('send')
     const [selectedToken, setSelectedToken] = useState(sanityTokens[0])
 

@@ -35,6 +35,10 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
         }
     }, [activeThirdWebToken])
 
+    const sendCrypto = async() => {
+        
+    }
+
     return (
         <Wrapper>
             <Amount>

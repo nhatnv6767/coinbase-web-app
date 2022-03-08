@@ -10,6 +10,7 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
     const [imageUrl, setImageUrl] = useState(null)
     // track define of token - image ETH => ETH
     const [activeThirdWebToken, setActiveThirdWebToken] = useState()
+    const [balance, setBalance] = useState('Fetching ...')
 
     useEffect(() => {
         const activeToken = thirdWebTokens.find(token => token.address === selectedToken.contractAddress)

@@ -12,7 +12,7 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
         console.log(selectedToken, '::fire')
         const url = imageUrlBuilder(client).image(selectedToken.logo).url()
         console.log(url)
-    }, [])
+    }, [selectedToken])
     return (
         <Wrapper>
             <Amount>

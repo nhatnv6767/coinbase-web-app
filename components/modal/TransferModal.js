@@ -4,6 +4,7 @@ import Transfer from './Transfer'
 
 const TransferModal = () => {
     const [action, setAction] = useState('send')
+    const [selectedToken, setSelectedToken] = useState(sanityTokens[0])
 
     const selectedStyle = {
         color: '#3773f5',

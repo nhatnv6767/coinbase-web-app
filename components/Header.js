@@ -48,7 +48,7 @@ const Header = ({ walletAddress, connectWallet }) => {
                 onRequestClose={() => router.push('/')}
                 style={customStyles}
             >
-                <TransferModal />
+                <TransferModal sanityTokens={sanityTokens}/>
             </Modal>
         </Wrapper>
     )

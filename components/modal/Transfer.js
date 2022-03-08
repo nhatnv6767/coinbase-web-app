@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { FaWallet } from 'react-icons/fa'
 
@@ -6,7 +6,9 @@ const Transfer = ({selectedToken}) => {
     const [amount, setAmount] = useState()
     const [recipient, setRecipient] = useState('')
 
-    console.log(selectedToken)
+    useEffect(() => {
+        console.log(selectedToken)
+    }, [])
     return (
         <Wrapper>
             <Amount>

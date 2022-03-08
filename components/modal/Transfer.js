@@ -24,7 +24,12 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
         setImageUrl(url)
     }, [selectedToken])
 
-    useEffect(() => { }, [])
+    useEffect(() => { 
+        const getBalance = async() => {
+            const balance = await activeThirdWebToken.balanceOf(walletAddress)
+            setBalance(balance.displayValue)
+        }
+    }, [activeThirdWebToken])
 
     return (
         <Wrapper>

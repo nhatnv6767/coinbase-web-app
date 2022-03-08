@@ -49,6 +49,10 @@ const Transfer = () => {
             <Row>
                 <Continue>Continue</Continue>
             </Row>
+            <Row>
+                <BalanceTitle>ETH Balance</BalanceTitle>
+                <Balance>1.2 ETH</Balance>
+            </Row>
         </Wrapper>
     )
 }
@@ -190,3 +194,6 @@ const Continue = styled.button`
         background-color: #4a80f6;
     }
 `
+
+const BalanceTitle = styled.div``
+const Balance = styled.div``

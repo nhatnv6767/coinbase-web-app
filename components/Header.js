@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 Modal.setAppElement('#__next')
 
-const Header = ({ walletAddress, sanityTokens, connectWallet }) => {
+const Header = ({ walletAddress, sanityTokens, connectWallet }) => { // first in here
     const router = useRouter()
 
     const customStyles = {

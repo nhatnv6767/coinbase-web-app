@@ -18,7 +18,12 @@ const TransferModal = ({ sanityTokens }) => {
     const selectedModal = option => {
         switch (option) {
             case 'send':
-                return <Transfer selectedToken={selectedToken} />
+                return <Transfer
+                    selectedToken={selectedToken}
+                    setAction={setAction}
+                    thirdWebTokens={thirdWebTokens}
+                    walletAddress={walletAddress}
+                />
             case 'receive':
                 return <h2>receive</h2>
             default:

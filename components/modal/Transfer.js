@@ -12,10 +12,10 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
     const [activeThirdWebToken, setActiveThirdWebToken] = useState()
 
     useEffect(() => {
-        const activeToken = thirdWebTokens.find(token => token.address === selectedToken.address)
+        const activeToken = thirdWebTokens.find(token => token.address === selectedToken.contractAddress)
 
         console.log(activeToken, 'ACTIVE TOKEN...')
-    }, [])
+    }, [thirdWebTokens, selectedToken])
 
     useEffect(() => {
         console.log(selectedToken, '::fire')

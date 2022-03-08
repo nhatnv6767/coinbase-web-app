@@ -92,7 +92,7 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
                 </Row>
             </TransferForm>
             <Row>
-                <Continue>Continue</Continue>
+                <Continue onclick={() => sendCrypto()}>Continue</Continue>
             </Row>
             <Row>
                 <BalanceTitle>{selectedToken.symbol} Balance</BalanceTitle>

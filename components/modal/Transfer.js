@@ -7,7 +7,7 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
     const [recipient, setRecipient] = useState('')
 
     useEffect(() => {
-        console.log(selectedToken)
+        console.log(selectedToken, '::fire')
     }, [])
     return (
         <Wrapper>

@@ -8,6 +8,12 @@ const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) =
     const [amount, setAmount] = useState()
     const [recipient, setRecipient] = useState('')
     const [imageUrl, setImageUrl] = useState(null)
+    // track define of token - image ETH => ETH
+    const [activeThirdWebToken, setActiveThirdWebToken] = useState()
+
+    useEffect(() => {
+
+    }, [])
 
     useEffect(() => {
         console.log(selectedToken, '::fire')

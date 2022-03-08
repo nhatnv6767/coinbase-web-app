@@ -18,7 +18,7 @@ const TransferModal = ({ sanityTokens }) => {
     const selectedModal = option => {
         switch (option) {
             case 'send':
-                return <Transfer sanityTokens={sanityTokens} />
+                return <Transfer selectedToken={selectedToken} />
             case 'receive':
                 return <h2>receive</h2>
             default:

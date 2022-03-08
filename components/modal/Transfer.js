@@ -7,11 +7,12 @@ import { client } from '../../lib/sanity'
 const Transfer = ({ selectedToken, setAction, thirdWebTokens, walletAddress }) => {
     const [amount, setAmount] = useState()
     const [recipient, setRecipient] = useState('')
+    const [imageUrl, setImageUrl] = useState(null)
 
     useEffect(() => {
         console.log(selectedToken, '::fire')
         const url = imageUrlBuilder(client).image(selectedToken.logo).url()
-        console.log(url)
+        setImageUrl(url)
     }, [selectedToken])
     return (
         <Wrapper>

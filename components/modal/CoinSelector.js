@@ -13,7 +13,7 @@ const CoinSelector = (
   }
 ) => {
   return (
-    <h2>Yo</h2>
+    <h2>Yo {walletAddress}</h2>
   )
 }
 

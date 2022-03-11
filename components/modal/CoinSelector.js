@@ -13,7 +13,7 @@ const CoinSelector = (
   }
 ) => {
   return (
-    <div>CoinSelector</div>
+    <h2>Yo</h2>
   )
 }
 

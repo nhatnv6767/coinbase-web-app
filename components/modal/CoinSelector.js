@@ -17,6 +17,11 @@ const CoinSelector = (
       <Title>
         Select Asset
       </Title>
+      <CoinList>
+        {sanityTokens.map(token =>(
+          <h2>{token.name}</h2>
+        ))}
+      </CoinList>
     </Wrapper>
   )
 }

@@ -13,13 +13,19 @@ const CoinSelector = (
   }
 ) => {
   return (
-    <h2>Yo {walletAddress}</h2>
+    <Wrapper>
+      <Title>
+        Select Asset
+      </Title>
+    </Wrapper>
   )
 }
 
 export default CoinSelector
 
-const Wrapper = styled.div`
+const Wrapper = styled.div``
+
+const Title = styled.div`
   width: 100%;
   text-align: center;
   font-size: 1.5rem;

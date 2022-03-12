@@ -54,6 +54,10 @@ const CoinItem = ({
         <Icon>
           <img src={imageUrl} />
         </Icon>
+        <NameDetails>
+          <Name>{token.name}</Name>
+          <Symbol>{token.symbol}</Symbol>
+        </NameDetails>
       </Main>
     </Wrapper>
   )
@@ -100,6 +104,11 @@ const NameDetails = styled.div``
 const Name = styled.div`
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
+`
+
+const Symbol = styled.div`
+  color: #888f9b;
+  font-size: 0.8rem;
 `
 
 const Balance = styled.div``

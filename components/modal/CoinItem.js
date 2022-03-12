@@ -45,7 +45,7 @@ const CoinItem = ({
     <Wrapper>
       <Main>
         <Icon>
-          {/* <img src="" /> */}
+          <img src={imageUrl} />
         </Icon>
       </Main>
     </Wrapper>

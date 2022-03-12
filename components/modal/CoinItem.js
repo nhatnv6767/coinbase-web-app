@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-const CoinItem = ({ 
-    token,
-    sender,
-    setAction,
-    selectedToken,
-    setSelectedToken,
-    sanityTokens,
-    thirdWebTokens,
+const CoinItem = ({
+  token,
+  sender,
+  setAction,
+  selectedToken,
+  setSelectedToken,
+  sanityTokens,
+  thirdWebTokens,
 }) => {
 
   const [balance, setBalance] = useState('Fetching...')
@@ -18,8 +18,10 @@ const CoinItem = ({
     const getBalance = async () => {
       let activeThirdWebToken
 
-      thirdWebTokens.map((token) => {
-        
+      thirdWebTokens.map((thirWebtoken) => {
+        if (thirWebtoken.address === token.contractAddress) {
+          activeThirdWebToken = thirWebtoken
+        }
       })
     }
   })

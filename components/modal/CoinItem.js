@@ -28,6 +28,10 @@ const CoinItem = ({
       
       return await setBalance(balance.displayValue.split('.')[0])
     }
+
+    const getImageUrl = async() => {
+      
+    }
   })
 
   return (

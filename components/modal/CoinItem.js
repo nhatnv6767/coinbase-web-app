@@ -1,6 +1,14 @@
 import React from 'react'
 
-const CoinItem = () => {
+const CoinItem = ({ 
+    token,
+    sender,
+    setAction,
+    selectedToken,
+    setSelectedToken,
+    sanityTokens,
+    thirdWebTokens,
+}) => {
   return (
     <div>CoinItem</div>
   )

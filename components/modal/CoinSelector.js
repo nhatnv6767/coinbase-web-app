@@ -19,8 +19,17 @@ const CoinSelector = (
         Select Asset
       </Title>
       <CoinList>
-        {sanityTokens.map(token =>(
-          <CoinItem />
+        {sanityTokens.map((token, index) => (
+          <CoinItem
+            key={index}
+            token={token}
+            sender={walletAddress}
+            selectedToken={selectedToken}
+            setSelectedToken={setSelectedToken}
+            thirdWebTokens={thirdWebTokens}
+            sanityTokens={sanityTokens}
+            setAction={setAction}
+          />
         ))}
       </CoinList>
     </Wrapper>

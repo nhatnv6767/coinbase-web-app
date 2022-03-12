@@ -14,6 +14,16 @@ const CoinItem = ({
   const [balance, setBalance] = useState('Fetching...')
   const [imageUrl, setImageUrl] = useState(null)
 
+  useEffect(() => {
+    const getBalance = async () => {
+      let activeThirdWebToken
+
+      thirdWebTokens.map((token) => {
+        
+      })
+    }
+  })
+
   return (
     <Wrapper>
       <Main>

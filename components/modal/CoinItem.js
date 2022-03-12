@@ -11,11 +11,23 @@ const CoinItem = ({
     thirdWebTokens,
 }) => {
   return (
-    <div>{sanityTokens[0].name}</div>
+    <Wrapper>{sanityTokens[0].name}</Wrapper>
   )
 }
 
 export default CoinItem
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.3rem;
+
+  &:hover { 
+    background-color: #0e0f14;
+  }
+`
 
 const Main = styled.div`
     flex: 1;

@@ -11,7 +11,13 @@ const CoinItem = ({
     thirdWebTokens,
 }) => {
   return (
-    <Wrapper>{sanityTokens[0].name}</Wrapper>
+    <Wrapper>
+      <Main>
+        <Icon>
+          
+        </Icon>
+      </Main>
+    </Wrapper>
   )
 }
 

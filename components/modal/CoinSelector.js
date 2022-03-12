@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styled from 'styled-components'
+import CoinItem from './CoinItem'
 
 
 const CoinSelector = (
@@ -19,7 +20,7 @@ const CoinSelector = (
       </Title>
       <CoinList>
         {sanityTokens.map(token =>(
-          <h2>{token.name}</h2>
+          <CoinItem />
         ))}
       </CoinList>
     </Wrapper>

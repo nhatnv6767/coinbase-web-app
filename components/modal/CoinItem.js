@@ -10,7 +10,7 @@ const CoinItem = ({
     thirdWebTokens,
 }) => {
   return (
-    <div>CoinItem</div>
+    <div>{sanityTokens[0].name}</div>
   )
 }
 

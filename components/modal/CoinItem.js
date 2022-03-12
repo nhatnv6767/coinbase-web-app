@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import imageUrlBuilder from '@sanity/image-url'
+import { client } from '../../lib/sanity'
+import { FaCheck } from 'react-icons/fa'
 
 const CoinItem = ({
   token,
@@ -30,7 +33,8 @@ const CoinItem = ({
     }
 
     const getImageUrl = async() => {
-      
+        const imgUrl = imageUrlBuilder(client).image(token.logo).url()
+        setImageUrl(imgUrl)
     }
   })
 

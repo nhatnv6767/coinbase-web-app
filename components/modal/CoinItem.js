@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 const CoinItem = ({ 
@@ -10,11 +10,15 @@ const CoinItem = ({
     sanityTokens,
     thirdWebTokens,
 }) => {
+
+  const [balance, setBalance] = useState('Fetching...')
+  const [imageUrl, setImageUrl] = useState(null)
+
   return (
     <Wrapper>
       <Main>
         <Icon>
-          
+          {/* <img src="" /> */}
         </Icon>
       </Main>
     </Wrapper>

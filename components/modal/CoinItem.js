@@ -32,11 +32,14 @@ const CoinItem = ({
       return await setBalance(balance.displayValue.split('.')[0])
     }
 
-    const getImageUrl = async() => {
+    const getImgUrl = async() => {
         const imgUrl = imageUrlBuilder(client).image(token.logo).url()
         setImageUrl(imgUrl)
     }
-  })
+
+    getImgUrl()
+    getBalance()
+  }, [])
 
   return (
     <Wrapper>

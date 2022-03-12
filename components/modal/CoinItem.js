@@ -63,7 +63,7 @@ const CoinItem = ({
         {balance} {token.symbol}
       </Balance>
       <IsSelected>
-        {(selectedToken.contractAddress === token.contractAddress) && (
+        {Boolean(selectedToken.contractAddress === token.contractAddress) && (
           <FaCheck />
         )}
       </IsSelected>

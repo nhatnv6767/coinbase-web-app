@@ -23,6 +23,10 @@ const CoinItem = ({
           activeThirdWebToken = thirWebtoken
         }
       })
+
+      const balance = await activeThirdWebToken.balanceOf(sender)
+      
+      return await setBalance(balance.displayValue.split('.')[0])
     }
   })
 

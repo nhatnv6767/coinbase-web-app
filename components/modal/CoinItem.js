@@ -28,13 +28,13 @@ const CoinItem = ({
       })
 
       const balance = await activeThirdWebToken.balanceOf(sender)
-      
+
       return await setBalance(balance.displayValue.split('.')[0])
     }
 
-    const getImgUrl = async() => {
-        const imgUrl = imageUrlBuilder(client).image(token.logo).url()
-        setImageUrl(imgUrl)
+    const getImgUrl = async () => {
+      const imgUrl = imageUrlBuilder(client).image(token.logo).url()
+      setImageUrl(imgUrl)
     }
 
     getImgUrl()
@@ -42,7 +42,10 @@ const CoinItem = ({
   }, [])
 
   return (
-    <Wrapper>
+    <Wrapper style={{
+      backgroundColor: selectedToken.name === token.name && '#141519'
+    }}
+    >
       <Main>
         <Icon>
           <img src={imageUrl} />

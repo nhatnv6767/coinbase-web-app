@@ -43,7 +43,11 @@ const CoinItem = ({
 
   return (
     <Wrapper style={{
-      backgroundColor: selectedToken.name === token.name && '#141519'
+      backgroundColor: selectedToken.name === token.name && '#141519',
+    }}
+    onClick={() => {
+      setSelectedToken(token)
+      setAction('send')
     }}
     >
       <Main>

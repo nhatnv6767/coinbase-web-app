@@ -44,6 +44,12 @@ const TransferModal = ({ sanityTokens, thirdWebTokens, walletAddress }) => {
                 return (
                     <div>
                         <h2>transferring...</h2>
+                        <TailSpin
+                            height="100"
+                            width="100"
+                            color='grey'
+                            ariaLabel='loading'
+                        />
                     </div>
                 )
 
